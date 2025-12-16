@@ -20951,7 +20951,7 @@ pre[class*="language-"] code:not(:last-of-type) {
 }
 
 .details-value {
-  padding: 0.4rem 0.75rem !important;
+  padding: 0.4rem 0.5rem !important;
   vertical-align: middle;
   font-size: 0.85rem;
   line-height: 1.3;
