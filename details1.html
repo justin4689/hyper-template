@@ -709,49 +709,33 @@
                     <a href="index.html" class="btn btn-outline-primary mx-12">
                       Lister
                     </a>
-                    <button class="btn btn-outline-primary mx-12"   data-bs-toggle="modal"
-                      data-bs-target="#signup-modal">
+                   <button
+                      class="btn btn-outline-primary mx-12"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
                       Rechercher
                     </button>
 
-                    
                     <!-- Signup modal content -->
                     <div
-                      id="signup-modal"
+                    
                       class="modal fade"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-hidden="true"
+                     id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
                     >
                       <div class="modal-dialog">
                         <div class="modal-content">
-                          <div class="modal-body">
-                            <div
-                              class="auth-brand text-center mt-2 mb-4 position-relative top-0"
-                            >
-                              <a href="index.html" class="logo-dark">
-                                <span
-                                  ><img
-                                    src="assets/images/logo-dark.png"
-                                    alt="dark logo"
-                                    height="22"
-                                /></span>
-                              </a>
-                              <a href="index.html" class="logo-light">
-                                <span
-                                  ><img
-                                    src="assets/images/logo.png"
-                                    alt="logo"
-                                    height="22"
-                                /></span>
-                              </a>
-                            </div>
 
-                            <form class="ps-3 pe-3" action="#">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Rechercher</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                             <form class="" action="#">
+                              <div class="modal-body">
+                           
+                         
                               <div class="mb-3">
-                                <label for="username" class="form-label"
-                                  >Rechercher</label
-                                >
+                             
                                 <input
                                   class="form-control"
                                   type="email"
@@ -761,7 +745,7 @@
                                 />
                               </div>
 
-                              <div class="mb-3 d-flex gap-3">
+                              <div class=" d-flex gap-3">
                                 <div class="form-check">
                                   <input
                                     type="checkbox"
@@ -806,13 +790,15 @@
                                 </div>
                               </div>
 
-                              <div class="mb-3 text-center">
-                                <button class="btn btn-outline-primary" type="submit">
+                             
+                              </div>
+
+                              <div class="modal-footer">
+                                  <button class="btn btn-outline-primary" type="submit">
                                   Rechercher
                                 </button>
                               </div>
                             </form>
-                          </div>
                         </div>
                         <!-- /.modal-content -->
                       </div>
@@ -841,12 +827,9 @@
                                   href="javascript:void(0);"
                                   class="details-title"
                                 >
-                                  Name
+                                  Name :
                                 </h4>
-                                <hr
-                                  class="m-0"
-                                  style="border-top: 2px dashed #dee2e6"
-                                />
+                                <hr class="m-0 hr-dashed" />
                                 <p class="details-value my-0">Airi Satou</p>
                               </div>
                             </div>
@@ -864,12 +847,9 @@
                                   href="javascript:void(0);"
                                   class="details-title"
                                 >
-                                  Postion
+                                  Postion :
                                 </h4>
-                                <hr
-                                  class="m-0"
-                                  style="border-top: 2px dashed #dee2e6"
-                                />
+                                <hr class="m-0 hr-dashed" />
                                 <p class="details-value my-0">Accountant</p>
                               </div>
                             </div>
@@ -879,7 +859,7 @@
                         </div>
                       </div>
                       <div class="col-lg-2">
-                        <div class="card my-0  shadow-none border">
+                        <div class="card my-0 shadow-none border">
                           <div class="">
                             <div class="row align-items-center">
                               <div class="col">
@@ -887,12 +867,9 @@
                                   href="javascript:void(0);"
                                   class="details-title"
                                 >
-                                  Office
+                                  Office :
                                 </h4>
-                                <hr
-                                  class="m-0"
-                                  style="border-top: 2px dashed #dee2e6"
-                                />
+                                <hr class="m-0 hr-dashed" />
                                 <p class="details-value my-0">Tokyo</p>
                               </div>
                             </div>
@@ -910,12 +887,9 @@
                                   href="javascript:void(0);"
                                   class="details-title"
                                 >
-                                  Age
+                                  Age :
                                 </h4>
-                                <hr
-                                  class="m-0"
-                                  style="border-top: 2px dashed #dee2e6"
-                                />
+                                <hr class="m-0 hr-dashed" />
                                 <p class="details-value my-0">33</p>
                               </div>
                             </div>
@@ -925,7 +899,7 @@
                         </div>
                       </div>
                       <div class="col-lg-2">
-                        <div class="card my-0  shadow-none border">
+                        <div class="card my-0 shadow-none border">
                           <div class="">
                             <div class="row align-items-center">
                               <div class="col">
@@ -933,12 +907,9 @@
                                   href="javascript:void(0);"
                                   class="details-title"
                                 >
-                                  Age
+                                  Age :
                                 </h4>
-                                <hr
-                                  class="m-0"
-                                  style="border-top: 2px dashed #dee2e6"
-                                />
+                                <hr class="m-0 hr-dashed" />
                                 <p class="details-value my-0">33</p>
                               </div>
                             </div>
@@ -948,7 +919,7 @@
                         </div>
                       </div>
                       <div class="col-lg-2">
-                        <div class="card my-0  shadow-none border">
+                        <div class="card my-0 shadow-none border">
                           <div class="">
                             <div class="row align-items-center">
                               <div class="col">
@@ -956,12 +927,9 @@
                                   href="javascript:void(0);"
                                   class="details-title"
                                 >
-                                  Start date
+                                  Start date :
                                 </h4>
-                                <hr
-                                  class="m-0"
-                                  style="border-top: 2px dashed #dee2e6"
-                                />
+                                <hr class="m-0 hr-dashed" />
                                 <p class="details-value my-0">$320,800</p>
                               </div>
                             </div>
@@ -971,7 +939,7 @@
                         </div>
                       </div>
                       <div class="col-lg-2">
-                        <div class="card my-0  shadow-none border">
+                        <div class="card my-0 shadow-none border">
                           <div class="">
                             <div class="row align-items-center">
                               <div class="col">
@@ -979,12 +947,9 @@
                                   href="javascript:void(0);"
                                   class="details-title"
                                 >
-                                  Salary
+                                  Salary :
                                 </h4>
-                                <hr
-                                  class="m-0"
-                                  style="border-top: 2px dashed #dee2e6"
-                                />
+                                <hr class="m-0 hr-dashed" />
 
                                 <p class="details-value my-0">$162,700</p>
                               </div>
@@ -995,21 +960,22 @@
                         </div>
                       </div>
                     </div>
+                    <hr />
 
-                    <div class="row mt-5 ">
+                    <div class="row">
                       <div class="col">
-                        <div class="tab-content ">
+                        <div class="tab-content">
                           <div
                             class="tab-pane show active"
                             id="default-tabs-preview "
                           >
-                            <ul class="nav nav-tabs mb-3 px-2 ">
+                            <ul class="nav nav-tabs mb-3 px-2">
                               <li class="nav-item">
                                 <a
                                   href="#home"
                                   data-bs-toggle="tab"
-                                  aria-expanded="false"
-                                  class="nav-link"
+                                  aria-expanded="true"
+                                  class="nav-link active"
                                 >
                                   <i
                                     class="mdi mdi-home-variant d-md-none d-block"
@@ -1021,8 +987,8 @@
                                 <a
                                   href="#profile"
                                   data-bs-toggle="tab"
-                                  aria-expanded="true"
-                                  class="nav-link active"
+                                  aria-expanded="false"
+                                  class="nav-link"
                                 >
                                   <i
                                     class="mdi mdi-account-circle d-md-none d-block"

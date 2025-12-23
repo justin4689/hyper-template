@@ -20962,3 +20962,14 @@ font-size: 0.8rem;
 html[data-bs-theme="dark"] .details-title {
   color: #6c757d;
 }
+.hr-dashed {
+  border-top: 2px dashed #dee2e6;
+}
+
+
+html[data-bs-theme="dark"] .hr-dashed {
+  border-top: 2px dashed #464f5b
+
+;
+}
+
