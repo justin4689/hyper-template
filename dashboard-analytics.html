@@ -626,6 +626,32 @@
           <!--- Sidemenu -->
           <ul class="side-nav">
             <li class="side-nav-title">Menu de navigation</li>
+           <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarDashboards" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                    <i class="uil-home-alt"></i>
+                    <span class="badge bg-success float-end">5</span>
+                    <span> Dashboards </span>
+                </a>
+                <div class="collapse" id="sidebarDashboards">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="dashboard-analytics.html">Analytics</a>
+                        </li>
+                        <li>
+                            <a href="ecommerce.html">Ecommerce</a>
+                        </li>
+                        <li>
+                            <a href="dashboard-projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="dashboard-crm.html">CRM</a>
+                        </li>
+                        <li>
+                            <a href="dashboard-wallet.html">E-Wallet</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li class="side-nav-item">
               <a
                 data-bs-toggle="collapse"
@@ -692,440 +718,468 @@
       <!-- ============================================================== -->
       <!-- Start Page Content here -->
       <!-- ============================================================== -->
-      <div class="content-page">
-        <div class="content">
-          <!-- Start Content-->
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12">
-                <div class="page-title-box">
-                  <div class="page-title-right">
-                    <a
-                      href="formulaire.html"
-                      class="btn btn-outline-primary mx-12"
-                    >
-                      Nouveau
-                    </a>
-                    <a href="index.html" class="btn btn-outline-primary mx-12">
-                      Lister
-                    </a>
-                    <button
-                      class="btn btn-outline-primary mx-12"
-                      data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop"
-                    >
-                      Rechercher
-                    </button>
+      
+        <div class="content-page">
+            <div class="content">
 
-                    <!-- Signup modal content -->
-                    <div
-                      class="modal fade"
-                      id="staticBackdrop"
-                      data-bs-backdrop="static"
-                      data-bs-keyboard="false"
-                      tabindex="-1"
-                      aria-labelledby="staticBackdropLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">
-                              Rechercher
-                            </h5>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <form class="" action="#">
-                            <div class="modal-body">
-                              <div class="mb-3">
-                                <input
-                                  class="form-control"
-                                  type="email"
-                                  id="username"
-                                  required=""
-                                  placeholder="Rechercher..."
-                                />
-                              </div>
-
-                              <div class="d-flex gap-3">
-                                <div class="form-check">
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    id="customCheck1"
-                                  />
-                                  <label
-                                    class="form-check-label"
-                                    for="customCheck1"
-                                    >name
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    id="customCheck1"
-                                  />
-                                  <label
-                                    class="form-check-label"
-                                    for="customCheck1"
-                                    >position
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    id="customCheck1"
-                                  />
-                                  <label
-                                    class="form-check-label"
-                                    for="customCheck1"
-                                    >salary
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="modal-footer" >
-                              <button
-                                class="btn btn-outline-primary"
-                                type="submit"
-
-                                style="margin-right: 2px; margin-bottom: 2px"
-                            
-                              >
-                                Rechercher
-                              </button>
-                            </div>
-                          </form>
-                        </div>
-                        <!-- /.modal-content -->
-                      </div>
-                      <!-- /.modal-dialog -->
-                    </div>
-                    <!-- /.modal -->
-                  </div>
-                  <h4 class="page-title">Utilisateurs</h4>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-body py-3 px-0 overflow-hidden">
-                    <h4 class="header-title m-0 ps-3">Details utilisateurs</h4>
-                    <hr />
-
-                      <div class="row gy-3 gx-3 px-3">
-                        <div class="col-lg-2">
-                          <div class="card my-0 shadow-none border">
-                            <div class="">
-                              <div class="row align-items-center">
-                                <div class="col">
-                                  <h4
-                                    href="javascript:void(0);"
-                                    class="details-title"
-                                  >
-                                    Name :
-                                  </h4>
-                                  <hr class="m-0 hr-dashed" />
-                                  <p class="details-value my-0">Airi Satou</p>
-                                </div>
-                              </div>
-                              <!-- end row -->
-                            </div>
-                            <!-- end .p-2-->
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="card my-0 shadow-none border">
-                            <div class="">
-                              <div class="row align-items-center">
-                                <div class="col">
-                                  <h4
-                                    href="javascript:void(0);"
-                                    class="details-title"
-                                  >
-                                    Postion :
-                                  </h4>
-                                  <hr class="m-0 hr-dashed" />
-                                  <p class="details-value my-0">Accountant</p>
-                                </div>
-                              </div>
-                              <!-- end row -->
-                            </div>
-                            <!-- end .p-2-->
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="card my-0 shadow-none border">
-                            <div class="">
-                              <div class="row align-items-center">
-                                <div class="col">
-                                  <h4
-                                    href="javascript:void(0);"
-                                    class="details-title"
-                                  >
-                                    Office :
-                                  </h4>
-                                  <hr class="m-0 hr-dashed" />
-                                  <p class="details-value my-0">Tokyo</p>
-                                </div>
-                              </div>
-                              <!-- end row -->
-                            </div>
-                            <!-- end .p-2-->
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="card my-0 shadow-none border">
-                            <div class="">
-                              <div class="row align-items-center">
-                                <div class="col">
-                                  <h4
-                                    href="javascript:void(0);"
-                                    class="details-title"
-                                  >
-                                    Age :
-                                  </h4>
-                                  <hr class="m-0 hr-dashed" />
-                                  <p class="details-value my-0">33</p>
-                                </div>
-                              </div>
-                              <!-- end row -->
-                            </div>
-                            <!-- end .p-2-->
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="card my-0 shadow-none border">
-                            <div class="">
-                              <div class="row align-items-center">
-                                <div class="col">
-                                  <h4
-                                    href="javascript:void(0);"
-                                    class="details-title"
-                                  >
-                                    Age :
-                                  </h4>
-                                  <hr class="m-0 hr-dashed" />
-                                  <p class="details-value my-0">33</p>
-                                </div>
-                              </div>
-                              <!-- end row -->
-                            </div>
-                            <!-- end .p-2-->
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="card my-0 shadow-none border">
-                            <div class="">
-                              <div class="row align-items-center">
-                                <div class="col">
-                                  <h4
-                                    href="javascript:void(0);"
-                                    class="details-title"
-                                  >
-                                    Start date :
-                                  </h4>
-                                  <hr class="m-0 hr-dashed" />
-                                  <p class="details-value my-0">$320,800</p>
-                                </div>
-                              </div>
-                              <!-- end row -->
-                            </div>
-                            <!-- end .p-2-->
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="card my-0 shadow-none border">
-                            <div class="">
-                              <div class="row align-items-center">
-                                <div class="col">
-                                  <h4
-                                    href="javascript:void(0);"
-                                    class="details-title"
-                                  >
-                                    Salary :
-                                  </h4>
-                                  <hr class="m-0 hr-dashed" />
-
-                                  <p class="details-value my-0">$162,700</p>
-                                </div>
-                              </div>
-                              <!-- end row -->
-                            </div>
-                            <!-- end .p-2-->
-                          </div>
-                        </div>
-                      </div>
-                    <hr />
+                <!-- Start Content-->
+                <div class="container-fluid">
 
                     <div class="row">
-                      <div class="col">
-                        <div class="tab-content">
-                          <div
-                            class="tab-pane show active"
-                            id="default-tabs-preview "
-                          >
-                            <ul class="nav nav-tabs mb-3 px-2">
-                              <li class="nav-item">
-                                <a
-                                  href="#home"
-                                  data-bs-toggle="tab"
-                                  aria-expanded="true"
-                                  class="nav-link active"
-                                >
-                                  <i
-                                    class="mdi mdi-home-variant d-md-none d-block"
-                                  ></i>
-                                  <span class="d-none d-md-block">Home</span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a
-                                  href="#profile"
-                                  data-bs-toggle="tab"
-                                  aria-expanded="false"
-                                  class="nav-link"
-                                >
-                                  <i
-                                    class="mdi mdi-account-circle d-md-none d-block"
-                                  ></i>
-                                  <span class="d-none d-md-block">Profile</span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a
-                                  href="#settings"
-                                  data-bs-toggle="tab"
-                                  aria-expanded="false"
-                                  class="nav-link"
-                                >
-                                  <i
-                                    class="mdi mdi-settings-outline d-md-none d-block"
-                                  ></i>
-                                  <span class="d-none d-md-block"
-                                    >Settings</span
-                                  >
-                                </a>
-                              </li>
-                            </ul>
-
-                            <div class="tab-content px-3">
-                              <div class="tab-pane show active" id="home">
-                                <p>
-                                  Food truck quinoa dolor sit amet, consectetuer
-                                  adipiscing elit. Aenean commodo ligula eget
-                                  dolor. Aenean massa. Cum sociis natoque
-                                  penatibus et magnis dis parturient montes,
-                                  nascetur ridiculus mus. Donec quam felis,
-                                  ultricies nec, pellentesque eu, pretium quis,
-                                  sem. Nulla consequat massa quis enim.
-                                </p>
-                                <p class="mb-0">
-                                  Donec pede justo, fringilla vel, aliquet nec,
-                                  vulputate eget, arcu. In enim justo, rhoncus
-                                  ut, imperdiet a, venenatis vitae, justo.
-                                  Nullam dictum felis eu pede mollis pretium.
-                                  Integer tincidunt.Cras dapibus. Vivamus
-                                  elementum semper nisi. Aenean vulputate
-                                  eleifend tellus. Aenean leo ligula, porttitor
-                                  eu, consequat vitae, eleifend ac, enim.
-                                </p>
-                              </div>
-                              <div class="tab-pane" id="profile">
-                                <p>
-                                  Donec pede justo, fringilla vel, aliquet nec,
-                                  vulputate eget, arcu. In enim justo, rhoncus
-                                  ut, imperdiet a, venenatis vitae, justo.
-                                  Nullam dictum felis eu pede mollis pretium.
-                                  Integer tincidunt.Cras dapibus. Vivamus
-                                  elementum semper nisi. Aenean vulputate
-                                  eleifend tellus. Aenean leo ligula, porttitor
-                                  eu, consequat vitae, eleifend ac, enim.
-                                </p>
-                                <p class="mb-0">
-                                  Food truck quinoa dolor sit amet, consectetuer
-                                  adipiscing elit. Aenean commodo ligula eget
-                                  dolor. Aenean massa. Cum sociis natoque
-                                  penatibus et magnis dis parturient montes,
-                                  nascetur ridiculus mus. Donec quam felis,
-                                  ultricies nec, pellentesque eu, pretium quis,
-                                  sem. Nulla consequat massa quis enim.
-                                </p>
-                              </div>
-                              <div class="tab-pane" id="settings">
-                                <p>
-                                  Food truck quinoa dolor sit amet, consectetuer
-                                  adipiscing elit. Aenean commodo ligula eget
-                                  dolor. Aenean massa. Cum sociis natoque
-                                  penatibus et magnis dis parturient montes,
-                                  nascetur ridiculus mus. Donec quam felis,
-                                  ultricies nec, pellentesque eu, pretium quis,
-                                  sem. Nulla consequat massa quis enim.
-                                </p>
-                                <p class="mb-0">
-                                  Donec pede justo, fringilla vel, aliquet nec,
-                                  vulputate eget, arcu. In enim justo, rhoncus
-                                  ut, imperdiet a, venenatis vitae, justo.
-                                  Nullam dictum felis eu pede mollis pretium.
-                                  Integer tincidunt.Cras dapibus. Vivamus
-                                  elementum semper nisi. Aenean vulputate
-                                  eleifend tellus. Aenean leo ligula, porttitor
-                                  eu, consequat vitae, eleifend ac, enim.
-                                </p>
-                              </div>
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <form class="d-flex">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-light" id="dash-daterange">
+                                            <span class="input-group-text bg-primary border-primary text-white">
+                                                <i class="mdi mdi-calendar-range font-13"></i>
+                                            </span>
+                                        </div>
+                                        <a href="javascript: void(0);" class="btn btn-primary ms-2">
+                                            <i class="mdi mdi-autorenew"></i>
+                                        </a>
+                                    </form>
+                                </div>
+                                <h4 class="page-title">Analytics</h4>
                             </div>
-                          </div>
-                          <!-- end preview-->
                         </div>
-                        <!-- end tab-content-->
-                      </div>
-                      <!-- end card-->
                     </div>
-                    <!-- end col -->
-                  </div>
-                  <!-- end card body-->
-                </div>
-                <!-- end card -->
-              </div>
-              <!-- end col-->
-            </div>
-            <!-- end row-->
-          </div>
-          <!-- container -->
-        </div>
-        <!-- content -->
 
-        <!-- Footer Start -->
-        <footer class="footer">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6">
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                © Hyper - Coderthemes.com
-              </div>
-              <div class="col-md-6">
-                <div class="text-md-end footer-links d-none d-md-block">
-                  <a href="javascript: void(0);">About</a>
-                  <a href="javascript: void(0);">Support</a>
-                  <a href="javascript: void(0);">Contact Us</a>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="card tilebox-one">
+                                <div class="card-body">
+                                    <i class='uil uil-users-alt float-end'></i>
+                                    <h6 class="text-uppercase mt-0">Active Users</h6>
+                                    <h2 class="my-2" id="active-users-count">121</h2>
+                                    <p class="mb-0 text-muted">
+                                        <span class="text-success me-2"><span class="mdi mdi-arrow-up-bold"></span> 5.27%</span>
+                                        <span class="text-nowrap">Since last month</span>
+                                    </p>
+                                </div> <!-- end card-body-->
+                            </div>
+                            <!--end card-->
+
+                            <div class="card tilebox-one">
+                                <div class="card-body">
+                                    <i class='uil uil-window float-end'></i>
+                                    <h6 class="text-uppercase mt-0">Views per minute</h6>
+                                    <h2 class="my-2" id="active-views-count">560</h2>
+                                    <p class="mb-0 text-muted">
+                                        <span class="text-danger me-2"><span class="mdi mdi-arrow-down-bold"></span> 1.08%</span>
+                                        <span class="text-nowrap">Since previous week</span>
+                                    </p>
+                                </div> <!-- end card-body-->
+                            </div>
+                            <!--end card-->
+
+                            <div class="card cta-box overflow-hidden">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h3 class="m-0 fw-normal cta-box-title">Enhance your <b>Campaign</b> for better outreach <i class="mdi mdi-arrow-right"></i></h3>
+                                        </div>
+                                        <img class="ms-3" src="assets/images/svg/email-campaign.svg" width="92" alt="Generic placeholder image">
+                                    </div>
+                                </div>
+                                <!-- end card-body -->
+                            </div>
+                        </div> <!-- end col -->
+
+                        <div class="col-xl-9 col-lg-8">
+                            <div class="card card-h-100">
+                                <div class="card-body">
+                                    <div class="alert alert-warning alert-dismissible fade show mb-3" role="alert">
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        Property HY1xx is not receiving hits. Either your site is not receiving any sessions or it is not tagged correctly.
+                                    </div>
+                                    <ul class="nav float-end d-none d-lg-flex">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-muted" href="#">Today</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-muted" href="#">7d</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">15d</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-muted" href="#">1m</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-muted" href="#">1y</a>
+                                        </li>
+                                    </ul>
+                                    <h4 class="header-title mb-3">Sessions Overview</h4>
+
+                                    <div dir="ltr">
+                                        <div id="sessions-overview" class="apex-charts mt-3" data-colors="#0acf97"></div>
+                                    </div>
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="d-flex card-header justify-content-between align-items-center">
+                                    <h4 class="header-title">Sessions by country</h4>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end">
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Refresh Report</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body pt-0">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div id="world-map-markers" class="mt-3 mb-3" style="height: 300px">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4" dir="ltr">
+                                            <div id="country-chart" class="apex-charts" data-colors="#727cf5"></div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col-->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="card">
+                                <div class="d-flex card-header justify-content-between align-items-center">
+                                    <h4 class="header-title">Views Per Minute</h4>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle arrow-none card-drop p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end">
+                                            <a href="javascript:void(0);" class="dropdown-item">Refresh Report</a>
+                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body pt-0">
+                                    <div id="views-min" class="apex-charts" data-colors="#0acf97"></div>
+
+                                    <div class="table-responsive mt-3">
+                                        <table class="table table-sm mb-0 font-13">
+                                            <thead>
+                                                <tr>
+                                                    <th>Page</th>
+                                                    <th>Views</th>
+                                                    <th>Bounce Rate</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="text-muted">/hyper/dashboard-analytics</a>
+                                                    </td>
+                                                    <td>25</td>
+                                                    <td>87.5%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="text-muted">/hyper/dashboard-crm</a>
+                                                    </td>
+                                                    <td>15</td>
+                                                    <td>21.48%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="text-muted">/ubold/dashboard</a>
+                                                    </td>
+                                                    <td>10</td>
+                                                    <td>63.59%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="text-muted">/minton/home</a>
+                                                    </td>
+                                                    <td>7</td>
+                                                    <td>56.12%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col-->
+
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="card">
+                                <div class="d-flex card-header justify-content-between align-items-center">
+                                    <h4 class="header-title">Sessions by Browser</h4>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle arrow-none card-drop p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end">
+                                            <a href="javascript:void(0);" class="dropdown-item">Refresh Report</a>
+                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body pt-0">
+                                    <div id="sessions-browser" class="apex-charts mt-2" data-colors="#727cf5"></div>
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col-->
+
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="card">
+                                <div class="d-flex card-header justify-content-between align-items-center">
+                                    <h4 class="header-title">Sessions by Operating System</h4>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle arrow-none card-drop p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end">
+                                            <a href="javascript:void(0);" class="dropdown-item">Refresh Report</a>
+                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body pt-0">
+                                    <div id="sessions-os" class="apex-charts mt-2" data-colors="#727cf5,#0acf97,#fa5c7c,#ffbc00"></div>
+
+                                    <div class="row text-center mt-2">
+                                        <div class="col-6">
+                                            <h4 class="fw-normal">
+                                                <span>6,510</span>
+                                            </h4>
+                                            <p class="text-muted mb-0">Online System</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <h4 class="fw-normal">
+                                                <span>2,031</span>
+                                            </h4>
+                                            <p class="text-muted mb-0">Offline System</p>
+                                        </div>
+                                    </div>
+
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col-->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="card">
+                                <div class="d-flex card-header justify-content-between align-items-center">
+                                    <h4 class="header-title">Channels</h4>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-light">Export <i class="mdi mdi-download ms-1"></i></a>
+                                </div>
+
+                                <div class="card-body pt-0">
+
+                                    <div class="table-responsive">
+                                        <table class="table table-sm table-centered mb-0 font-14">
+                                            <thead class="bg-light bg-opacity-50">
+                                                <tr>
+                                                    <th>Channel</th>
+                                                    <th>Visits</th>
+                                                    <th style="width: 40%;"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Direct</td>
+                                                    <td>2,050</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 3px;">
+                                                            <div class="progress-bar" role="progressbar" style="width: 65%; height: 20px;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Organic Search</td>
+                                                    <td>1,405</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 3px;">
+                                                            <div class="progress-bar bg-info" role="progressbar" style="width: 45%; height: 20px;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Refferal</td>
+                                                    <td>750</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 3px;">
+                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 30%; height: 20px;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Social</td>
+                                                    <td>540</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 3px;">
+                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- end table-responsive-->
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col-->
+
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="card">
+                                <div class="d-flex card-header justify-content-between align-items-center">
+                                    <h4 class="header-title">Social Media Traffic</h4>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-light">Export <i class="mdi mdi-download ms-1"></i></a>
+                                </div>
+
+                                <div class="card-body pt-0">
+
+                                    <div class="table-responsive">
+                                        <table class="table table-sm table-centered mb-0 font-14">
+                                            <thead class="bg-light bg-opacity-50">
+                                                <tr>
+                                                    <th>Network</th>
+                                                    <th>Visits</th>
+                                                    <th style="width: 40%;"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Facebook</td>
+                                                    <td>2,250</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 3px;">
+                                                            <div class="progress-bar" role="progressbar" style="width: 65%; height: 20px;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Instagram</td>
+                                                    <td>1,501</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 3px;">
+                                                            <div class="progress-bar" role="progressbar" style="width: 45%; height: 20px;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Twitter</td>
+                                                    <td>750</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 3px;">
+                                                            <div class="progress-bar" role="progressbar" style="width: 30%; height: 20px;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LinkedIn</td>
+                                                    <td>540</td>
+                                                    <td>
+                                                        <div class="progress" style="height: 3px;">
+                                                            <div class="progress-bar" role="progressbar" style="width: 25%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- end table-responsive-->
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col-->
+
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="card">
+                                <div class="d-flex card-header justify-content-between align-items-center">
+                                    <h4 class="header-title">Engagement Overview</h4>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-light">Export <i class="mdi mdi-download ms-1"></i></a>
+                                </div>
+
+                                <div class="card-body pt-0">
+
+                                    <div class="table-responsive">
+                                        <table class="table table-sm table-centered mb-0 font-14">
+                                            <thead class="bg-light bg-opacity-50">
+                                                <tr>
+                                                    <th>Duration (Secs)</th>
+                                                    <th style="width: 30%;">Sessions</th>
+                                                    <th style="width: 30%;">Views</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>0-30</td>
+                                                    <td>2,250</td>
+                                                    <td>4,250</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>31-60</td>
+                                                    <td>1,501</td>
+                                                    <td>2,050</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>61-120</td>
+                                                    <td>750</td>
+                                                    <td>1,600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>121-240</td>
+                                                    <td>540</td>
+                                                    <td>1,040</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- end table-responsive-->
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col-->
+
+                    </div>
+                    <!-- end row -->
+
                 </div>
-              </div>
+                <!-- container -->
+
             </div>
-          </div>
-        </footer>
-        <!-- end Footer -->
-      </div>
+            <!-- content -->
+
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <script>document.write(new Date().getFullYear())</script> © Hyper - Coderthemes.com
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-end footer-links d-none d-md-block">
+                                <a href="javascript: void(0);">About</a>
+                                <a href="javascript: void(0);">Support</a>
+                                <a href="javascript: void(0);">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
+
+        </div>
 
       <!-- ============================================================== -->
       <!-- End Page content -->
@@ -2419,5 +2473,39 @@
 
     <!-- Datatable Custom js -->
     <script src="assets/js/pages/demo.datatable-init.js"></script>
+
+      <!-- Daterangepicker js -->
+    <script src="assets/vendor/moment/moment.min.js"></script>
+    <script src="assets/vendor/daterangepicker/daterangepicker.js"></script>
+
+    <!-- Apex Charts js -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Vector Map Js -->
+    <script src="assets/vendor/jsvectormap/jsvectormap.min.js"></script>
+    <script src="assets/vendor/jsvectormap/world-merc.js"></script>
+    <script src="assets/vendor/jsvectormap/world.js"></script>
+
+    <!-- Dashboard App js -->
+    <script src="assets/js/pages/demo.dashboard.js"></script>
+
+     <!-- Daterangepicker js -->
+    <script src="assets/vendor/moment/moment.min.js"></script>
+    <script src="assets/vendor/daterangepicker/daterangepicker.js"></script>
+
+    <!-- Charts js -->
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Vector Map js -->
+    <script src="assets/vendor/jsvectormap/jsvectormap.min.js"></script>
+    <script src="assets/vendor/jsvectormap/world-merc.js"></script>
+    <script src="assets/vendor/jsvectormap/world.js"></script>
+
+    <!-- Analytics Dashboard App js -->
+    <script src="assets/js/pages/demo.dashboard-analytics.js"></script>
+  </body>
+</html>
+
   </body>
 </html>
