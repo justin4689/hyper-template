@@ -20973,3 +20973,10 @@ html[data-bs-theme="dark"] .hr-dashed {
 ;
 }
 
+
+ #basic-datatable th:last-child,
+      #basic-datatable td:last-child {
+        width: 0.1%;
+        white-space: nowrap;
+      }
+
