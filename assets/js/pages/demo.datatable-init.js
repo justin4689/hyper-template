@@ -12,7 +12,7 @@ new DataTable("#basic-datatable", {
     infoEmpty: "Affichage de 0 à 0 sur 0 éléments",
     infoFiltered: "(filtré de _MAX_ éléments au total)",
   },
-  columnDefs: [{ orderable: !1, searchable: !1, targets: -1 }],
+  columnDefs: [{ searchable: !1, targets: -1 }],
 }),
   document.addEventListener("DOMContentLoaded", () => {
     var e = document.querySelector("#datatable-buttons");
